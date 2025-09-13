@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #ccc;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=1" alt="Dog 1">
+      <div class="caption">Julie's Rabbit Ears</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=2" alt="Dog 2">
+      <div class="caption">The Innocent Look</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=3" alt="Dog 3">
+      <div class="caption">Big Eyed Buggy</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=4" alt="Dog 4">
+      <div class="caption">The Saint Doggo</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=5" alt="Dog 5">
+      <div class="caption">Big Eyed Buggy</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=6" alt="Dog 6">
+      <div class="caption">The Innocent Look</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=7" alt="Dog 7">
+      <div class="caption">The Saint Doggo</div>
+    </div>
+    <div class="card">
+      <img src="https://placedog.net/400/300?id=8" alt="Dog 8">
+      <div class="caption">Julie's Rabbit Ears</div>
+    </div>
+  </div>
+</body>
+</html>
